@@ -2,6 +2,8 @@
 
 #altiliyi ikiliye donustur
 altiki= lambda x: "".join(["{:04b}".format(int(i,16)) for i in x])
+#ikiliden altiliya donustur
+ikialti = lambda b: "".join(["%X"%int(b[i:i+4],2) for i in range(0,len(b),4)])
 
 #bir metni listeyle karmak için fonksiyon
 kar = lambda m,l: "".join(map(lambda x: m[x-1], l))
@@ -53,9 +55,9 @@ def cilingir(anahtar):
 def sifrele(metin, anahtar):
   #1. metin karma listesi
   mk1 = [58, 50, 42, 34, 26, 18, 10, 2, 60, 52, 44, 36, 28, 20, 12, 4, 62, 54, 46, 38, 30, 22, 14, 6, 64, 56, 48, 40, 32, 24, 16, 8, 57, 49, 41, 33, 25, 17, 9, 1, 59, 51, 43, 35, 27, 19, 11, 3, 61, 53, 45, 37, 29, 21, 13, 5, 63, 55, 47, 39, 31, 23, 15, 7]
-  m = kar(metin, mk1)
+  m = kar(altiki(metin), mk1)
   #anahtarligi olustur
-  anahtarlik = cilingir(anahtar)
+  anahtarlik = cilingir(altiki(anahtar))
   #baslangic sag ve sol degerlerini olustur
   sol = m[:len(m)/2]; sag = m[len(m)/2:]
   #16 aşamadan geçirip şifrele
@@ -63,5 +65,9 @@ def sifrele(metin, anahtar):
   #2. metin karma listesi
   mk2 = [40, 8, 48, 16, 56, 24, 64, 32, 39, 7, 47, 15, 55, 23, 63, 31, 38, 6, 46, 14, 54, 22, 62, 30, 37, 5, 45, 13, 53, 21, 61, 29, 36, 4, 44, 12, 52, 20, 60, 28, 35, 3, 43, 11, 51, 19, 59, 27, 34, 2, 42, 10, 50, 18, 58, 26, 33, 1, 41, 9, 49, 17, 57, 25]
   #bu listeyle kar
-  return kar(sag+sol, mk2)
-  
+  return ikialti(kar(sag+sol, mk2))
+
+if __name__ == "__main__":
+  print sifrele("0123456789ABCDEF","133457799BBCDFF1") == "85E813540F0AB405"
+
+
