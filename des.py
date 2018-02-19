@@ -5,7 +5,7 @@ altiki= lambda x: "".join(["{:04b}".format(int(i,16)) for i in x])
 #ikiliden altiliya donustur
 ikialti = lambda b: "".join(["%X"%int(b[i:i+4],2) for i in range(0,len(b),4)])
 
-#bir metni listeyle karmak için fonksiyon
+#bir metni listeyle karmak icin fonksiyon
 kar = lambda m,l: "".join(map(lambda x: m[x-1], l))
 
 #xor fonksiyonu
