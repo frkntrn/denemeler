@@ -76,8 +76,12 @@ def sifrele(metin, anahtar):
   return ikialti(kar(sag+sol, mk2)).
 ```
 **Not:** Kodlarda hızdan çok anlaşılabilirlik ön plandadır.
+
 ---
-**S-box'taki doğrusallık**
+**S-box'taki doğrusallık**</br>
+
+![sboxtaki_doğrusallık](https://github.com/frkntrn/kriptanaliz/blob/master/ss/sboxtaki_dogrusallik.png)
+
 
   
   
