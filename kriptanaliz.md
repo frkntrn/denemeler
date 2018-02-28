@@ -159,9 +159,9 @@ Bu denklem, önceki iki denklemin ikisi de 0 veya 1 ise 0 olur. Yani olasılığ
 
 ![](https://latex.codecogs.com/gif.latex?p^{2}+(1-p)^{2})</br></br>
 
-sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br>
+sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br></br>
 
-![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/algoritma1.png)
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/algoritma1.png)</br></br>
 
 
 
