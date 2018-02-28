@@ -111,11 +111,11 @@ skor = lambda a,alfa,beta: sum([kendine_xor(maskele(x,"{:06b}".format(alfa))) ==
 skor_listesi = [[a, alfa, beta, skor(a,alfa,beta)] for a in range(1,9) for alfa in range(1,64) for beta in range(1,16)]
 
 #32'den en buyuk sapma yapani bul
-print(max(lambda x: abs(32-x[-1]), skor_listesi))
+print(max(skor_listesi,key = lambda x: abs(32-x[-1])))
 ```
-**[5, 16, 15, 12]** sonucunu elde ettik. En büyük sapmanın **a = 5, alfa = 16, beta = 15** değerlerinde ve N5(16,15) = 12 olduğunu bulmuş olduk.
+[5, 16, 15, 12] sonucunu elde ettik. En büyük sapmanın *a = 5, alfa = 16, beta = 15* değerlerinde ve ![](https://latex.codecogs.com/gif.latex?N_{5}(16,15)) olduğunu bulmuş olduk.
 
-![](https://latex.codecogs.com/gif.latex?10^{5}" title="10^{5})
+
   
 
 
