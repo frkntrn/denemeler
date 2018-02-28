@@ -113,7 +113,7 @@ skor_listesi = [[a, alfa, beta, skor(a,alfa,beta)] for a in range(1,9) for alfa 
 #32'den en buyuk sapma yapani bul
 print(max(skor_listesi,key = lambda x: abs(32-x[-1])))
 ```
-[5, 16, 15, 12] sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler:</br>
+[5, 16, 15, 12] sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler:</br></br>
 ![](https://latex.codecogs.com/gif.latex?N_{5}(16,15)=12) 
 
 
