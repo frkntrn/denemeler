@@ -139,6 +139,7 @@ print("Etkilenen bitler: X:" + str(X) + " F:" + ",".join(map(str,F)) + " K:" + s
 **Etkilenen bitler: X:15 F:7,18,24,29 K:22**</br>
 Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]=K[22])
+
 ---
 
 
