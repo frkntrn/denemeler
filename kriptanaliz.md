@@ -2,7 +2,7 @@
 ---
 **Yöntemin özeti:**
 - **S-box'taki doğrusallık:** DES şifresindeki tek doğrusal olmayan, yani güvenliği sağlayan bölüm S-box bölümüdür. Bu bölümdeki zafiyeti kullanarak, doğruluğu rastgeleden farklı bir doğrusal denklem oluşturabiliriz.
-- **1 bitlik avantaj:** Elde edilen denklemle, açık ve şifreli metin çiftlerini ve algoritma I'i kullanarak anahtarın 1 bitini yüksek olasılıkla bulabiliriz.
+- **DES şifresindeki doğrusallık:** Elde edilen denklemle, açık ve şifreli metin çiftlerini ve algoritma I'i kullanarak anahtarın 1 bitini yüksek olasılıkla bulabiliriz.
 - **Bilinen açık metinle saldırı (KPA):** Elde edilen denklemden, içinde alt anahtarın olduğu yeni bir denklem oluşturup, açık ve şifreli metin çiftlerini ve algoritma II'yi kullanarak, alt anahtarın belli bölümünü yüksek olasılıkla tespit edip, anahtarın geri kalanını kaba kuvvetle bulabiliriz.
 - **Sadece şifreli metinle saldırı (COA):** Elimizde açık metinler olmasa bile, bu metinlerin rastgele olmamasından yararlanıp, şifreli metinler ve algoritma II'yi kullanarak anahtarı yüksek olasılıkla bulabiliriz.
 ---
@@ -83,7 +83,7 @@ def sifrele(metin, anahtar):
 **Not:** Kodlarda hızdan çok anlaşılabilirlik ön plandadır.
 
 ---
-**S-box'taki doğrusallık**</br>
+**S-box'taki Doğrusallık**</br>
 
 ![sboxtaki_doğrusallık](https://github.com/frkntrn/kriptanaliz/blob/master/ss/sboxtaki_dogrusallik.png)
 
@@ -141,7 +141,7 @@ Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]=K[22])
 
 ---
-
+**DES Şifresindeki Doğrusallık**
 
 
 
