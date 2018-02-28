@@ -6,7 +6,12 @@
 - **Bilinen açık metinle saldırı (KPA):** Elde edilen denklemi edilen denklemden, içinde alt anahtarın olduğu yeni bir denklem oluşturup, açık ve şifreli metin çiftlerini ve algoritma II'yi kullanarak, alt anahtarın belli bölümünü yüksek olasılıkla tespit edip, anahtarın geri kalanını kaba kuvvetle bulabiliriz.
 - **Sadece şifreli metinle saldırı (COA):** Elimizde açık metinler olmasa bile, bu metinlerin rastgele olmamasından yararlanıp, şifreli metinler ve algoritma II'yi kullanarak anahtarı yüksek olasılıkla bulabiliriz.
 ---
-**16 Turluk DES Şifresi**
+**16 Turluk DES Şifresi**</br>
+
+![des](https://github.com/frkntrn/kriptanaliz/blob/master/ss/des.png)</br>
+
+**Uygulaması**</br>
+
 ```python
 #altiliyi ikiliye donustur
 altiki= lambda x: "".join(["{:04b}".format(int(i,16)) for i in x])
