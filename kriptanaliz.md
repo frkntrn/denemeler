@@ -114,9 +114,9 @@ skor_listesi = [[a, alfa, beta, skor(a,alfa,beta)] for a in range(1,9) for alfa 
 print(max(skor_listesi,key = lambda x: abs(32-x[-1])))
 ```
 **[5, 16, 15, 12]** </br>
-sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler:</br></br>
+sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler 12/64=0.19 olasılıkla:</br></br>
 ![](https://latex.codecogs.com/gif.latex?N_{5}(16,15)=12) </br>
-Şimdi bu bağıntıyı kullanarak **F** fonksiyonuna giren ve çıkan metni, ve alt anahtarı içeren bir denklem yazabiliriz. 
+Şimdi bu bağıntıyı kullanarak F fonksiyonuna giren ve çıkan metni, ve alt anahtarı içeren bir denklem yazabiliriz. 
 
 ```python
 #ikilik tabanda 16=(010000), 15 = (1111)
@@ -137,6 +137,10 @@ F = sorted(map(lambda i: 31-fk.index(i) , asagi))
 print("Etkilenen bitler: X:" + str(X) + " F:" + ",".join(map(str,F)) + " K:" + str(K))
 ```
 **Etkilenen bitler: X:15 F:7,18,24,29 K:22**</br>
+Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br>
+![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]=K[22])
+
+
 
 
 
