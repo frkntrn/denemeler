@@ -167,7 +167,9 @@ Bu algoritmanın başarı oranı N ve |p-1/2| arttıkça artıcak. Bu algoritman
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani1.png)</br></br>
 
+p > 1/2 ve p < 1/2 durumları simetrik olduğundan p > 1/2 olsun. Açık metinler rastgele olduğundan, T rastgele değişkeninin dağılımının Merkezi Limit Theoreminden dolayı normal olduğunu söyleyebiliriz. T'nin beklenen değerini ve standart sapmasını hesaplayabiliriz.
 
+![](https://latex.codecogs.com/gif.latex?\mu&space;=N*p,\&space;p=\frac{1}{2}&plus;\varepsilon,&space;\&space;\sigma^{2}=N*p*(1-p)\cong&space;\frac{N}{4})
 
 
 
