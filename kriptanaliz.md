@@ -159,9 +159,14 @@ Bu denklem, önceki iki denklemin ikisi de 0 veya 1 ise 0 olur. Yani olasılığ
 
 ![](https://latex.codecogs.com/gif.latex?p^{2}+(1-p)^{2})</br></br>
 
-sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br></br>
+sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürecek bir algoritma lazım.</br></br>
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/algoritma1.png)</br></br>
+
+Bu algoritmanın başarı oranı N ve |p-1/2| arttıkça artıcak. Bu algoritmanın başarı oranını hesaplayabiliriz.</br></br>
+
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani.png)</br></br>
+
 
 
 
