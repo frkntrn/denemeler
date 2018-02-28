@@ -137,7 +137,7 @@ F = sorted(map(lambda i: 31-fk.index(i) , asagi))
 print("Etkilenen bitler: X:" + str(X) + " F:" + ",".join(map(str,F)) + " K:" + str(K))
 ```
 **Etkilenen bitler: X:15 F:7,18,24,29 K:22**</br>
-Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br>
+Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]=K[22])
 
 
