@@ -165,7 +165,9 @@ sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmay�
 
 Bu algoritmanın başarı oranı N ve |p-1/2| arttıkça artıcak. Bu algoritmanın başarı oranını hesaplayabiliriz.</br></br>
 
-![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani.png)</br></br>
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani1.png)</br></br>
+
+
 
 
 
