@@ -141,7 +141,37 @@ Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]\oplus&space;K[22]=0)
 
 ---
-**DES Şifresindeki Doğrusallık**
+**DES Şifresindeki Doğrusallık**</br>
+3 turluk DES için bir denklem kurmaya çalışalım. Yukarıda elde ettiğimizde denklemden faydalabiliriz.</br>
+
+![](https://latex.codecogs.com/gif.latex?X_{2}\oplus&space;P_{H}&space;=&space;F(X_{1},K_{1}),X_{2}\oplus&space;C_{H}&space;=&space;F(X_{3},K_{3}))</br></br>
+doğru olduğundan aşağıdaki denklemlere ulaşabiliriz.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?X_{2}[7,18,24,29]\oplus&space;P_{H}[7,18,24,29]\oplus&space;P_{L}[15]\oplus&space;K_{1}[22]=0)</br></br>
+
+![](https://latex.codecogs.com/gif.latex?X_{2}[7,18,24,29]\oplus&space;C_{H}[7,18,24,29]\oplus&space;C_{L}[15]\oplus&space;K_{3}[22]=0)</br></br>
+
+İki denkleminde gerçekleşme olasılığı p = 0.19. Bu iki denklemden de istediğimiz sonuca varabiliriz.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?P_{H}[7,18,24,29]\oplus&space;C_{H}[7,18,24,29]\oplus&space;P_{L}[15]\oplus&space;C_{L}[15]\oplus&space;K_{1}[22]&space;\oplus&space;K_{3}[22]=0)</br></br>
+
+Bu denklem, önceki iki denklemin ikisi de 0 veya 1 ise 0 olur. Yani olasılığı </br></br>
+
+![](https://latex.codecogs.com/gif.latex?p^{2}*(1-p)^{2})</br></br>
+
+sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
