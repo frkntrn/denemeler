@@ -171,6 +171,13 @@ p > 1/2 ve p < 1/2 durumları simetrik olduğundan p > 1/2 olsun. Açık metinle
 
 ![](https://latex.codecogs.com/gif.latex?\mu&space;=N*p,\&space;p=\frac{1}{2}&plus;\varepsilon,&space;\&space;\sigma^{2}=N*p*(1-p)\cong&space;\frac{N}{4})
 
+Açık metinlerin beklenen değeri N/2 olacak, T'nin bu değerden büyük olmasını istiyoruz. Φ standart normal CDF olsun. O zaman olasılık fonksiyonu aşağıdaki gibi olur.
+
+![](https://latex.codecogs.com/gif.latex?\Phi&space;(\frac{\frac{N}{2}-Np}{\sqrt{\frac{N}{4}}})&space;=&space;\Phi(-2\sqrt{N}|p-\frac{1}{2}|))
+
+
+
+
 
 
 
