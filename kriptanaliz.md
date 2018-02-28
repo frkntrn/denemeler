@@ -157,7 +157,7 @@ doğru olduğundan aşağıdaki denklemlere ulaşabiliriz.</br></br>
 
 Bu denklem, önceki iki denklemin ikisi de 0 veya 1 ise 0 olur. Yani olasılığı </br></br>
 
-![](https://latex.codecogs.com/gif.latex?p^{2}*(1-p)^{2})</br></br>
+![](https://latex.codecogs.com/gif.latex?p^{2}+(1-p)^{2})</br></br>
 
 sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br>
 
