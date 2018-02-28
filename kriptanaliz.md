@@ -3,7 +3,7 @@
 **Yöntemin özeti:**
 - **S-box'taki doğrusallık:** DES şifresindeki tek doğrusal olmayan, yani güvenliği sağlayan bölüm S-box bölümüdür. Bu bölümdeki zafiyeti kullanarak, doğruluğu rastgeleden farklı bir doğrusal denklem oluşturabiliriz.
 - **1 bitlik avantaj:** Elde edilen denklemle, açık ve şifreli metin çiftlerini ve algoritma I'i kullanarak anahtarın 1 bitini yüksek olasılıkla bulabiliriz.
-- **Bilinen açık metinle saldırı (KPA):** Elde edilen denklemi edilen denklemden, içinde alt anahtarın olduğu yeni bir denklem oluşturup, açık ve şifreli metin çiftlerini ve algoritma II'yi kullanarak, alt anahtarın belli bölümünü yüksek olasılıkla tespit edip, anahtarın geri kalanını kaba kuvvetle bulabiliriz.
+- **Bilinen açık metinle saldırı (KPA):** Elde edilen denklemden, içinde alt anahtarın olduğu yeni bir denklem oluşturup, açık ve şifreli metin çiftlerini ve algoritma II'yi kullanarak, alt anahtarın belli bölümünü yüksek olasılıkla tespit edip, anahtarın geri kalanını kaba kuvvetle bulabiliriz.
 - **Sadece şifreli metinle saldırı (COA):** Elimizde açık metinler olmasa bile, bu metinlerin rastgele olmamasından yararlanıp, şifreli metinler ve algoritma II'yi kullanarak anahtarı yüksek olasılıkla bulabiliriz.
 ---
 **16 Turluk DES Şifresi**</br>
@@ -88,7 +88,7 @@ def sifrele(metin, anahtar):
 ![sboxtaki_doğrusallık](https://github.com/frkntrn/kriptanaliz/blob/master/ss/sboxtaki_dogrusallik.png)
 
 Bu tanımla Sbox'a giren giren 6 bit ve çıkan 4 bit arasında bir korelasyon bulunmaya çalışılmış. 
-- **α** ve **β** maskeleriyle, giren ve çıkan (a. S-box'tan geçirilmiş girdi) parçalardan istenilen bitler seçilmiş. 
+- α ve β maskeleriyle, giren ve çıkan (a. S-box'tan geçirilmiş girdi) parçalardan istenilen bitler seçilmiş. 
 - Parçalar xor'dan  geçirildikten sonra kıyaslanmış. Xor 2'lik tabanda toplama olduğundan doğrusal ve etkisiz elemanı 0'dır.
 - Bu sayı, 64/2 = 32'den ne kadar uzaksa, rastgelelikten de o kadar uzak olduğunu ve, giren ve çıkan bitler arasında korelasyon olduğunu söyleyebiliriz
 
@@ -113,8 +113,34 @@ skor_listesi = [[a, alfa, beta, skor(a,alfa,beta)] for a in range(1,9) for alfa 
 #32'den en buyuk sapma yapani bul
 print(max(skor_listesi,key = lambda x: abs(32-x[-1])))
 ```
-[5, 16, 15, 12] sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler:</br></br>
-![](https://latex.codecogs.com/gif.latex?N_{5}(16,15)=12) 
+> [5, 16, 15, 12] </br>
+sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler:</br></br>
+![](https://latex.codecogs.com/gif.latex?N_{5}(16,15)=12) </br>
+Şimdi bu bağıntıyı kullanarak **F** fonksiyonuna giren ve çıkan metni, ve alt anahtarı içeren bir denklem yazabiliriz. 
+
+```python
+#ikilik tabanda 16=(010000), 15 = (1111)
+#S-box'a giren metin 48 bit ve bağıntı 5. S-box'ta olduğundan, giren metninde etkilenen bit 4*6+2 = 26. 
+#S-box'tan giren metin 32 bit ve bağıntı 5. S-box'ta olduğundan, çıkan metninde etkilenen bitler 4*4+1 - 4*4+4 arası, yani 17-20 arası bitler
+yukari = 26; asagi = range(17,21)
+
+#Ama Matsui DES notasyonun aksine işlemci bit sırasını kullanmış, bizimde bit sırasını ters çevirmemiz lazım. https://crypto.stackexchange.com/questions/25305/matsuis-linear-attack-on-des-p-box
+#Giren metin, anahtar ve X'in genisletilmeden önceki halinin xor'u oldugundan, anahtarın etkilenen bitini bulmuş olduk, şimdi X'i bulalım
+K = 48 - yukari
+g = [32, 1, 2, 3, 4, 5, 4, 5, 6, 7, 8, 9, 8, 9, 10, 11, 12, 13, 12, 13, 14, 15, 16, 17, 16, 17, 18, 19, 20, 21, 20, 21, 22, 23, 24, 25, 24, 25, 26, 27, 28, 29, 28, 29, 30, 31, 32, 1]
+X = 32-g[yukari-1]
+
+#Çıkan metin bir karma işleminden geçmeli
+fk = [16, 7, 20, 21, 29, 12, 28, 17, 1, 15, 23, 26, 5, 18, 31, 10, 2, 8, 24, 14, 32, 27, 3, 9, 19, 13, 30, 6, 22, 11, 4, 25]
+F = sorted(map(lambda i: 31-fk.index(i) , asagi))
+
+print("Etkilenen bitler: X:" + str(X) + " F:" + ",".join(map(str,F)) + " K:" + str(K))
+```
+>Etkilenen bitler: X:15 F:7,18,24,29 K:22</br>
+
+
+
+
 
 
   
