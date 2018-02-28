@@ -141,7 +141,7 @@ Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]\oplus&space;K[22]=0)
 
 ---
-**DES Şifresindeki Doğrusallık**</br>
+**DES Şifresindeki Doğrusallık**</br></br>
 3 turluk DES için bir denklem kurmaya çalışalım. Yukarıda elde ettiğimizde denklemden faydalabiliriz.</br>
 
 ![](https://latex.codecogs.com/gif.latex?X_{2}\oplus&space;P_{H}&space;=&space;F(X_{1},K_{1}),X_{2}\oplus&space;C_{H}&space;=&space;F(X_{3},K_{3}))</br></br>
@@ -174,6 +174,9 @@ p > 1/2 ve p < 1/2 durumları simetrik olduğundan p > 1/2 olsun. Açık metinle
 Açık metinlerin beklenen değeri N/2 olacak, T'nin bu değerden büyük olmasını istiyoruz. Φ standart normal CDF olsun. O zaman olasılık fonksiyonu aşağıdaki gibi olur.
 
 ![](https://latex.codecogs.com/gif.latex?\Phi&space;(\frac{\frac{N}{2}-Np}{\sqrt{\frac{N}{4}}})&space;=&space;\Phi(-2\sqrt{N}|p-\frac{1}{2}|))
+
+---
+**Bilinen açık metinle saldırı (KPA)**</br></br>
 
 
 
