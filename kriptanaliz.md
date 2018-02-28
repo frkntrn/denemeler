@@ -119,7 +119,7 @@ sonucunu elde ettik. Yani en büyük sapmayı sağlayan değerler 12/64=0.19 ola
 Şimdi bu bağıntıyı kullanarak F fonksiyonuna giren ve çıkan metni, ve alt anahtarı içeren bir denklem yazabiliriz. 
 
 ```python
-#ikilik tabanda 16=(010000), 15 = (1111)
+#ikilik tabanda 16=(010000), 15=(1111)
 #S-box'a giren metin 48 bit ve bağıntı 5. S-box'ta olduğundan, giren metninde etkilenen bit 4*6+2 = 26. 
 #S-box'tan giren metin 32 bit ve bağıntı 5. S-box'ta olduğundan, çıkan metninde etkilenen bitler 4*4+1 - 4*4+4 arası, yani 17-20 arası bitler
 yukari = 26; asagi = range(17,21)
@@ -139,6 +139,7 @@ print("Etkilenen bitler: X:" + str(X) + " F:" + ",".join(map(str,F)) + " K:" + s
 **Etkilenen bitler: X:15 F:7,18,24,29 K:22**</br>
 Böylece aşağıdaki denklem 0.19 olasılıkla doğru olur.</br></br>
 ![](https://latex.codecogs.com/gif.latex?X[15]\oplus&space;F(X,K)[7,18,24,29]=K[22])
+---
 
 
 
