@@ -161,7 +161,7 @@ Bu denklem, önceki iki denklemin ikisi de 0 veya 1 ise 0 olur. Yani olasılığ
 
 sinden 0.7 çıkar. Şimdi açık ve şifreli metinleri topladıkça, bu sapmayı sömürücek bir algoritma lazım.</br>
 
-
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/algoritma1.png)
 
 
 
