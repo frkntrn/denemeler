@@ -183,6 +183,14 @@ Bu eşitliği ve öncekini kullanarak aşağıdaki denkleme ulaşabiliriz.</br><
 
 Denklemin olasığını hesaplamak için pratik bir yöntem:</br></br>
 
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/pilingup.png)
+
+Tümevarımla kolayca kanıtlanabilir. Bu yöntemi olasığı bulmak için kullanabiriz.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?\frac{1}{2}+2^{3}(\frac{1}{2}-\frac{22}{64})^{2}(\frac{1}{2}-\frac{12}{64})^{2}=0.519)</br></br>
+
+
+
 
 
 
