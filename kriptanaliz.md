@@ -171,10 +171,27 @@ p > 1/2 ve p < 1/2 durumları simetrik olduğundan p > 1/2 olsun. Açık metinle
 
 Açık metinlerin beklenen değeri N/2 olacak, T'nin bu değerden büyük olmasını istiyoruz. Φ standart normal CDF olsun. O zaman olasılık fonksiyonu aşağıdaki gibi olur.
 
-![](https://latex.codecogs.com/gif.latex?\Phi&space;(\frac{\frac{N}{2}-Np}{\sqrt{\frac{N}{4}}})&space;=&space;\Phi(-2\sqrt{N}|p-\frac{1}{2}|))
+![](https://latex.codecogs.com/gif.latex?\Phi&space;(\frac{\frac{N}{2}-Np}{\sqrt{\frac{N}{4}}})&space;=&space;\Phi(-2\sqrt{N}|p-\frac{1}{2}|))</br></br>
+
+Şimdi 5 turluk DES'e bakalım.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?NS_{1}(27,4)=22)</br></br>
+
+Bu eşitliği ve öncekini kullanarak aşağıdaki denkleme ulaşabiliriz.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?P_{H}[15]\oplus&space;P_{L}[7,18,24,27,28,29,30,31]\oplus&space;C_{H}[15]\oplus&space;C_{L}[7,18,24,27,28,29,30,31]\\=\&space;K_{1}[42,43,45,46]\oplus&space;K_{2}[22]\oplus&space;K_{4}[22]\oplus&space;K_{5}[42,43,45,46])</br></br>
+
+Denklemin olasığını hesaplamak için pratik bir yöntem:</br></br>
+
+
+
+
+
+
 
 ---
 **Bilinen açık metinle saldırı (KPA)**</br></br>
+
 
 
 
