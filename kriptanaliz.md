@@ -231,7 +231,9 @@ olur. Algoritma 2'nin başarı oranını hesaplayabiliriz. Yine p > 1/2 olsun.</
 
 ![](https://latex.codecogs.com/gif.latex?\frac{T-np}{\sqrt{\frac{N}{4}}}+\frac{Np-Na}{\sqrt{\frac{N}{4}}}>\frac{t-Na}{\sqrt{\frac{N}{4}}}>-\frac{T-np}{\sqrt{\frac{N}{4}}}-\frac{N-Np-Na}{\sqrt{\frac{N}{4}}})</br></br>
 
+![](https://latex.codecogs.com/gif.latex?S+2\sqrt{N}(p-a)>s>-S-2\sqrt{N}(1-p-a))
 
+![](https://latex.codecogs.com/gif.latex?S+4\sqrt{N}(p-\frac{1}{2})(1-q)>s>-S-4\sqrt{N}(p-\frac{1}{2})q)
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
 
