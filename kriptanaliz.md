@@ -196,6 +196,13 @@ Tümevarımla kolayca kanıtlanabilir. Bu yöntemi olasığı bulmak için kulla
 ---
 **Bilinen açık metinle saldırı (KPA)**</br></br>
 
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen8.png)</br>
+
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani2.png)</br>
+
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
+
+
 
 
 
