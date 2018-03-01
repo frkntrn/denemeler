@@ -247,7 +247,33 @@ Sabit doğru anahtar olasılık değeri için, herhangi bir anahtardan iyi olma 
 
 ---
 
-**Sadece şifreli metinle saldırı (COA):**
+**Sadece şifreli metinle saldırı (COA):**</br></br>
+
+Sadece şifreli metinleri kullanabilmemiz için denklemden açık metin bölümünü çıkarmalıyız. 8 turluk DES için denklem:</br>
+
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/sadecesifre1.png)</br>
+
+Açık metinlerin İngilizce metinler olduğundan, xorlanmış halleri rastgeleden farklı olacaktır.</br>
+
+![](https://latex.codecogs.com/gif.latex?P[7,8,14]=0)</br>
+
+olma olasılığı en çok 0.35'tir. Açık metin bölümü olmadan denklemin olasılığı:</br>
+
+![](https://latex.codecogs.com/gif.latex?\frac{1}{2}-2*(0.35-\frac{1}{2})*1.83*2^{-12}=\frac{1}{2}+1.1*2^{-13})</br>
+
+Sırasıyla 8 ve 16 tur için gerekli metin sayıları, (16 tur için önceki bölümdeki denklem kullanılıyor):</br>
+
+![](https://latex.codecogs.com/gif.latex?8\left&space;|&space;1.1*2^{-13}&space;\right&space;|^{-2}\simeq&space;2^{29},&space;8\left&space;|&space;1.48*2^{-26}&space;\right&space;|^{-2}\simeq&space;1.82*2^{53})
+
+
+
+
+
+
+
+
+
+
 
 
 
