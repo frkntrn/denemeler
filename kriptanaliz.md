@@ -223,17 +223,17 @@ T doğru olan, t doğru olmayan herhangi bir anahtarın rastgele değişkeni ols
 
 olur. Algoritma 2'nin başarı oranını hesaplayabiliriz. Yine p > 1/2 olsun.</br></br>
 
-![](https://latex.codecogs.com/gif.latex?T-\frac{N}{2}&space;>\left&space;|&space;t-\frac{N}{2}&space;\right&space;|)</br></br>
+![](https://latex.codecogs.com/gif.latex?T-\frac{N}{2}&space;>\left&space;|&space;t-\frac{N}{2}&space;\right&space;|)</br>
 
-![](https://latex.codecogs.com/gif.latex?T>t>N-T)</br></br>
+![](https://latex.codecogs.com/gif.latex?T>t>N-T)</br>
 
 Şimdi değişkenleri standartlaştırmalıyız. Yeni değişkenlerin adı S ve s olsun.</br></br>
 
-![](https://latex.codecogs.com/gif.latex?\frac{T-np}{\sqrt{\frac{N}{4}}}+\frac{Np-Na}{\sqrt{\frac{N}{4}}}>\frac{t-Na}{\sqrt{\frac{N}{4}}}>-\frac{T-np}{\sqrt{\frac{N}{4}}}-\frac{N-Np-Na}{\sqrt{\frac{N}{4}}})</br></br>
+![](https://latex.codecogs.com/gif.latex?\frac{T-np}{\sqrt{\frac{N}{4}}}+\frac{Np-Na}{\sqrt{\frac{N}{4}}}>\frac{t-Na}{\sqrt{\frac{N}{4}}}>-\frac{T-np}{\sqrt{\frac{N}{4}}}-\frac{N-Np-Na}{\sqrt{\frac{N}{4}}})</br>
 
-![](https://latex.codecogs.com/gif.latex?S+2\sqrt{N}(p-a)>s>-S-2\sqrt{N}(1-p-a))
+![](https://latex.codecogs.com/gif.latex?S+2\sqrt{N}(p-a)>s>-S-2\sqrt{N}(1-p-a))</br>
 
-![](https://latex.codecogs.com/gif.latex?S+4\sqrt{N}(p-\frac{1}{2})(1-q)>s>-S-4\sqrt{N}(p-\frac{1}{2})q)
+![](https://latex.codecogs.com/gif.latex?S+4\sqrt{N}(p-\frac{1}{2})(1-q)>s>-S-4\sqrt{N}(p-\frac{1}{2})q)</br>
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
 
