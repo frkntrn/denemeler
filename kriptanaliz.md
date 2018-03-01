@@ -235,13 +235,15 @@ olur. Algoritma 2'nin başarı oranını hesaplayabiliriz. Yine p > 1/2 olsun.</
 
 ![](https://latex.codecogs.com/gif.latex?S+4\sqrt{N}(p-\frac{1}{2})(1-q)>s>-S-4\sqrt{N}(p-\frac{1}{2})q)</br></br>
 
-Sabit doğru anahtar olasılık değeri için, herhangi bir anahtardan iyi olma olasılığını bulmuş olduk. Bu olasılığı bütün yanlış anahtarlar için bulup, çarptıktan sonra, sonra herbir sabit doğru anahtar olasılığı için hesaplarsak sonuca ulaşmış oluruz.Başarı oranı %96.25'ken, sırasıyla 8,12 ve 16 turluk DES şifreleri için gereken açık ve şifreli metin çifti sayıları:</br></br>
+Sabit doğru anahtar olasılık değeri için, herhangi bir anahtardan iyi olma olasılığını bulmuş olduk. Bu olasılığı bütün yanlış anahtarlar için bulup, çarptıktan sonra, sonra herbir sabit doğru anahtar olasılığı için hesaplarsak sonuca ulaşmış oluruz. Başarı oranı %96.25'ken, sırasıyla 8,12 ve 16 turluk DES şifreleri için gereken açık ve şifreli metin çifti sayıları:</br></br>
 
 ![](https://latex.codecogs.com/gif.latex?8\left&space;|&space;1.95*2^{-10}&space;\right&space;|^{-2}\simeq&space;2^{21},8\left&space;|&space;1.91*2^{-16}&space;\right&space;|^{-2}\simeq&space;2^{33},8\left&space;|&space;1.19*2^{-22}&space;\right&space;|^{-2}\simeq&space;2^{47})</br></br>
 
-16 turluk DES için denklem, diğer denklemler makalenin sonunda mevcut.
+16 turluk DES için denklem:</br>
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
+
+**Not**: 20 tura kadar olan denklemler makalenin sonunda mevcut.
 
 ---
 
