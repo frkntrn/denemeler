@@ -196,11 +196,42 @@ Tümevarımla kolayca kanıtlanabilir. Bu yöntemi olasığı bulmak için kulla
 ---
 **Bilinen açık metinle saldırı (KPA)**</br></br>
 
+Şimdi alt anahtarı dahil edip, daha etkili bir denklem oluşturmaya çalışalım. İlk örnek 8 turluk DES olacak. <br><br>
+
+![](https://latex.codecogs.com/gif.latex?C_{H}\oplus&space;F(C_{L},K_{8})=X_{7})<br><br>
+
+Olduğundan, bu eşitliği denkleme uyguladığımızda son basamağın bir bölümünü deşifre etmiş oluruz. Böylece denklemin doğruluğunun doğru alt anahtar için daha çok olmasını bekleriz.<br><br>
+
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen8.png)</br>
+
+Bu denklem, anahtarın 6 bitini etkilediği, bu 6 bit için 64 sayaç gerekir. 1. tura da aynı işlemi uygulayabileceğimizden
+toplamda 2*(6+1) = 14 biti elde edebiliriz ve geri kalan 42 biti kaba kuvvetle bulabiliriz. Açık ve şifreli metin çiftlerini topladıkça olasılığı artıracak algoritma bulmamız lazım.</br>
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/algoritma2.png)</br>
 
+Algoritma, en büyük sapmanın, doğru anahtardan geleceğini söylüyor. Algoritmanın başarı oranına bakalım.
+
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/basari_orani2.png)</br>
+
+Yukarıdaki iki denklemi xorladığımızda doğru olmayan bir anahtar için gereken denklemi buluruz. Doğru anahtarın denklemi sağlama olasığı p ve denklem 14'ün gerçekleşme olasılığı q olduğu için, doğru olmayan bir anahtarın denklemi sağlama olasılığı.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?a=pq&plus;(1-p)(1-q)=2pq-p-q&plus;1)
+
+T doğru olan, t doğru olmayan herhangi bir anahtarın rastgele değişkeni olsun. O zaman,<br><br>
+
+![](https://latex.codecogs.com/gif.latex?E(T)=np,E(t)=na,Var(T)\cong&space;Var(t)\cong&space;\frac{N}{4})<br><br>
+
+olur. Algoritma 2'nin başarı oranını hesaplayabiliriz. Yine p > 1/2 olsun.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?T-\frac{N}{2}&space;>\left&space;|&space;t-\frac{N}{2}&space;\right&space;|)</br></br>
+
+![](https://latex.codecogs.com/gif.latex?T>t>N-T)</br></br>
+
+Şimdi değişkenleri standartlaştırmalıyız. Yeni değişkenlerin adı S ve s olsun.</br></br>
+
+![](https://latex.codecogs.com/gif.latex?\frac{T-np}{\sqrt{\frac{N}{4}}}+\frac{Np-Na}{\sqrt{\frac{N}{4}}}>\frac{t-Na}{\sqrt{\frac{N}{4}}}>-\frac{T-np}{\sqrt{\frac{N}{4}}}-\frac{N-Np-Na}{\sqrt{\frac{N}{4}}})</br></br>
+
+
 
 ![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
 
