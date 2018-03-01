@@ -179,7 +179,7 @@ Açık metinlerin beklenen değeri N/2 olacak, T'nin bu değerden büyük olmas�
 
 Bu eşitliği ve öncekini kullanarak aşağıdaki denkleme ulaşabiliriz.</br></br>
 
-![](https://latex.codecogs.com/gif.latex?P_{H}[15]\oplus&space;P_{L}[7,18,24,27,28,29,30,31]\oplus&space;C_{H}[15]\oplus&space;C_{L}[7,18,24,27,28,29,30,31]\\=\&space;K_{1}[42,43,45,46]\oplus&space;K_{2}[22]\oplus&space;K_{4}[22]\oplus&space;K_{5}[42,43,45,46])</br></br>
+![](https://latex.codecogs.com/gif.latex?P_{H}[15]\oplus&space;P_{L}[7,18,24,27,28,29,30,31]\oplus&space;C_{H}[15]\oplus&space;C_{L}[7,18,24,27,28,29,30,31]=&space;K_{1}[42,43,45,46]\oplus&space;K_{2}[22]\oplus&space;K_{4}[22]\oplus&space;K_{5}[42,43,45,46])</br></br>
 
 Denklemin olasığını hesaplamak için pratik bir yöntem:</br></br>
 
