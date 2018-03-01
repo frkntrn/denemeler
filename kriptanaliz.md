@@ -241,7 +241,7 @@ Sabit doğru anahtar olasılık değeri için, herhangi bir anahtardan iyi olma 
 
 16 turluk DES için denklem, diğer denklemler makalenin sonunda mevcut.
 
-![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br><br>
+![](https://github.com/frkntrn/kriptanaliz/blob/master/ss/bilinen16.png)</br>
 
 ---
 
